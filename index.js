@@ -12,7 +12,9 @@ signUp.addEventListener("click",(e)=>{
     if(name1.value && email.value &&  password.value && conpassword.value){
         verifyText.innerText="Successfully Singned up";
         verifyText.style.color="green"
-        loadData()
+         setTimeout(()=>{
+            loadData()
+        },1000)
         console.log(name1.value)
     }
     else{
