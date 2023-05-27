@@ -58,12 +58,6 @@ body{
 .form input:focus{
     outline: none;
 }
-.in{
-    padding: .5rem 1.5rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
-}
-
 
 .profile{
     margin-top: 2rem;
@@ -76,4 +70,9 @@ body{
 .profile button{
     align-self: flex-start;
     padding: .5rem 1.5rem;
+}
+.in{
+    padding: .5rem 1.5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
