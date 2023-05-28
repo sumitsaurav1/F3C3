@@ -10,12 +10,18 @@ signUp.addEventListener("click",(e)=>{
     e.preventDefault();
     
     if(name1.value && email.value &&  password.value && conpassword.value){
-        verifyText.innerText="Successfully Singned up";
-        verifyText.style.color="green"
-         setTimeout(()=>{
-            loadData()
-        },1000)
-        console.log(name1.value)
+         if(password.value===conpassword.value){
+            verifyText.innerText="Successfully Singned up";
+            verifyText.style.color="green"
+            setTimeout(()=>{
+                loadData()
+            },1000)
+            console.log(name1.value)
+       }
+       else{
+        verifyText.innerText="Error: Password and confirm should be same"
+        verifyText.style.color="red";
+       }
     }
     else{
         
